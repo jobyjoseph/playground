@@ -1,0 +1,23 @@
+<script>
+// Prototype object
+var product = {
+  discountPercentage: 20,
+  calculateDiscountedPrice: function(){
+    return this.mrp - this.mrp * this.discountPercentage / 100;
+  }
+}
+
+// Creating first product
+var product1 = Object.create(product);
+product1.mrp = 30;
+
+// Creating second product
+var product2 = Object.create(product);
+product2.mrp = 40;
+
+product.discountPercentage = 10;
+
+// Printing discounted price
+console.log(product1.calculateDiscountedPrice()); // 24
+console.log(product2.calculateDiscountedPrice()); // 32
+</script>
