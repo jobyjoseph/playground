@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-dynamodb",
+  "version": "1.0.0",
+  "description": "POC connecting nodejs to dynamodb",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.7.21"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
